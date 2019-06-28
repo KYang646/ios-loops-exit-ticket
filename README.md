@@ -26,6 +26,9 @@ for number in 4..<8{
 
 print(myNum)
 ```
+MyNum initializes at 8 and the loop begins with the range value of 4. So it adds the initial value of myNum which is 8 into the initial range number which is 4. The result is 12. The loop repeats until the range value begins at 7 then the function is halted.
+
+or basically 8+(4) --> 12+(5) --> 17+(6) ->>> 7 HALT
 
 ***
 ## Question 2
@@ -38,6 +41,7 @@ for i in 1..<100 {
     print(i)
 }
 ```
+A. does not apply as the value stops at 99
 
 B)
 ```swift
@@ -45,6 +49,7 @@ for j in 1...100 {
     print(j)
 }
 ```
+B. applies because it completes at 100
 
 C)
 ```swift
@@ -52,6 +57,7 @@ for k in 1..<1000 where k < 101 {
     print(k)
 }
 ```
+C. applies because k will run until it maxes out before 101 which produces 1-100
 
 D)
 ```swift
@@ -59,6 +65,7 @@ for l in 1...100 where _ < 101 {
     print(l)
 }
 ```
+D. does not apply since it runs into a syntax error where _ is not defined.
 
 ***
 ## Question 3
@@ -72,6 +79,7 @@ for _ in 1...10{
     }
 }
 ```
+"Nesting" will printed 100 times because the master nest will run 10 times and within that next is another next that prints "Nesting" 10 times. 10x10 = 100 times!
 
 ***
 ## Question 4
@@ -87,6 +95,7 @@ while q%2 != 1 {
     q += 2
 }
 ```
+A will run forever
 
 b)
 ```swift
@@ -97,6 +106,7 @@ while r < 10 {
     r += 11
 }
 ```
+B will not run forever
 
 c)
 ```swift
@@ -107,6 +117,7 @@ while 3 != 3 {
     s += 1
 }
 ```
+C will not run forever
 
 d)
 ```swift
@@ -117,5 +128,5 @@ while t == t{
     t += 1
 }
 ```
-
+D will run forever
 ***
